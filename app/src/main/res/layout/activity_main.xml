@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_back" />
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/ic_settin" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login form"
+        android:layout_below="@+id/rel1"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="23dp"
+        android:id="@+id/logintext"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel2"
+        android:layout_below="@+id/logintext"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/img1"
+            android:src="@mipmap/ic_face"
+            android:layout_marginTop="16dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:id="@+id/edt1"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_marginLeft="18dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:id="@+id/edt2"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@+id/edt1"
+            android:layout_marginLeft="18dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            android:id="@+id/edt3"
+            android:layout_below="@+id/edt2"
+            android:layout_marginLeft="18dp"
+
+            android:layout_toRightOf="@+id/img1"
+
+            />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel3"
+        android:layout_below="@+id/edt2"
+        android:layout_marginTop="40dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt4"
+            android:lines="4"
+            android:hint="description"
+            android:textAlignment="viewStart"
+            />
+    </RelativeLayout>
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/rel4"
+    android:layout_marginTop="24dp"
+    android:layout_below="@+id/rel2"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:textStyle="bold"
+        android:id="@+id/gen1"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/gen1"
+
+        >
+
+    <RadioGroup
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio"
+        android:layout_centerHorizontal="true"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio1"
+            android:text="Male"
+            />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio2"
+        android:text="Female"
+        />
+    </RadioGroup>
+
+</RelativeLayout>
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/rel4"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country:"
+        android:textStyle="bold"
+        android:id="@+id/country"
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/country"
+        />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel4"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login:"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:id="@+id/login"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottomlayout"
+    android:layout_below="@+id/rel4"
+    android:layout_marginTop="100dp"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img2"
+        android:src="@mipmap/ic_voice"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img4"
+        android:src="@mipmap/ic_people"
+        android:layout_toRightOf="@+id/img2"
+        android:layout_marginLeft="90dp"
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img3"
+        android:src="@mipmap/ic_cartd"
+        android:layout_toRightOf="@+id/img4"
+        android:layout_marginLeft="90dp"
+
+        />
+
+</RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
